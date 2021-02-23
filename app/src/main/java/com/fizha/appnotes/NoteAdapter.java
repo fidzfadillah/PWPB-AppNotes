@@ -111,7 +111,7 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteViewHolder> implements
 
     private String getDateTime(){
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(
-                "MMMM dd, yyyy", Locale.getDefault()
+                "E, dd MMMM yyyy - HH:mm", Locale.getDefault()
         );
         Date date = new Date();
         return simpleDateFormat.format(date);

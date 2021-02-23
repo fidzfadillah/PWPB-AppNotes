@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
 
     private String getDateTime(){
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(
-                "MMMM dd, yyyy", Locale.getDefault()
+                "E, dd MMMM yyyy - HH:mm", Locale.getDefault()
         );
         Date date = new Date();
         return simpleDateFormat.format(date);
